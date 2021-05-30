@@ -17,7 +17,7 @@ constraint ArtistsGenresPK primary key (artist_id, genre_id)
 create table if not exists Albums (
 id serial primary key,
 title varchar not null,
-release_date date not null
+release_date integer not null
 );
 
 create table if not exists ArtistsAlbums (
@@ -30,13 +30,13 @@ create table if not exists Tracks (
 id serial primary key,
 album_id integer not null references Albums(id),
 title varchar not null,
-length varchar not null
+length integer not null
 );
 
 create table if not exists Mixes (
 id serial primary key,
 name varchar not null unique,
-release_date date not null
+release_date integer not null
 );
 
 create table if not exists TracksMixes (

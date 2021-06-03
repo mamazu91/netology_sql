@@ -33,8 +33,10 @@ connection.execute('''
 INSERT INTO ArtistsGenres
 VALUES
 (1, 1),
+(1, 2),
 (2, 2),
 (3, 1),
+(3, 5),
 (4, 1),
 (5, 3),
 (6, 4),
@@ -45,12 +47,12 @@ VALUES
 connection.execute('''
 INSERT INTO Albums (title, release_date)
 VALUES
-('Kid A', '2000'),
-('Mezzanine', '1998'),
+('Kid A', '2019'),
+('Mezzanine', '2020'),
 ('Hesitation Marks', '2013'),
 ('In Absentia', '2002'),
-('Money Store', '2012'),
-('1190', '2017'),
+('Money Store', '2018'),
+('1190', '2018'),
 ('TRST', '2012'),
 ('Burial', '2006');
 ''')
@@ -82,7 +84,6 @@ VALUES
 (5, 'Get Got', '171'),
 (5, 'Hustle Bones', '192'),
 (6, '1190', '312'),
-(6, 'Fire Spirits', '314'),
 (7, 'Shoom', '326'),
 (7, 'Chrissy E', '254'),
 (8, 'Distant Lights', '326'),
@@ -116,11 +117,9 @@ VALUES
 (9, 5),
 (10, 5),
 (11, 6),
-(12, 6),
 (13, 7),
 (14, 7),
 (1, 8),
 (4, 8),
-(12, 8),
 (15, 8);
 ''')
